@@ -29,7 +29,7 @@ header {
     font-size: 18px;
     font-weight: 600;
 }
-.drop_one li {
+.drop_one > li {
     position: relative;
     padding: 0 50px;
     list-style: none;
@@ -42,14 +42,18 @@ header {
 .drop_menu {
     background: #f2f2f2;
     position: absolute;
-    left: -20%;
+    left: 15%;
     display: none;
 }
-.drop_menu li a {
-    border-radius: 30px;
+.drop_menu li {
+    list-style: none;
 }
-.drop_menu li a:hover {
-    background: #323232;
+/* .drop_menu li a {
+} */
+.drop_menu li:hover,
+.drop_menu a:hover   {
+    background: #242526;
+    color: #fff;
 }
 .drop_one li:hover .drop_menu {
     display: block;
